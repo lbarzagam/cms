@@ -1,11 +1,9 @@
 package com.lore.demo.Api;
 
-import com.lore.demo.Config.SecurityConfig;
 import com.lore.demo.Models.Customer;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
-import org.springframework.web.bind.annotation.*;
 import com.lore.demo.Services.CustomerServices;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -52,8 +50,5 @@ public class CustomerResource {
   {
     customerService.deleteCustomer(customerId);
   }
-
-
-
 
 }

@@ -19,8 +19,7 @@ public class CustomerServices {
   private int customerIdCount = 1;
   private List<Customer> customerList = new CopyOnWriteArrayList<>();
 
-  public Customer addCustomer(Customer customer)
-  {
+  public Customer addCustomer(Customer customer) {
     return customerDao.save(customer);
 
     /*customer.setCustomerId(customerIdCount);
@@ -30,27 +29,26 @@ public class CustomerServices {
     return customer;*/
   }
 
-  public List<Customer>  getCustomers()
-  {
+  public List<Customer> getCustomers() {
     return (List<Customer>) customerDao.findAll();
     //return customerList;
   }
 
-  public Customer getCustomer(int id) {
+  public Customer getCustomer(Integer id) {
 
-    Optional<Customer> optionalCustomer = customerDao.findById(id);
+   /* Optional<Customer> optionalCustomer = customerDao.findById(id);
     if(!optionalCustomer.isPresent())
         throw new CustomerNotFoundException("The customer record is not available");
 
-    return optionalCustomer.get();
+    return optionalCustomer.get();*/
 
-    /*return customerList
+    return customerList
                  .stream()
                  .filter(c->c.getCustomerId() == id)
                  .findFirst()
-                 .get();*/
+                 .get();
   }
-  public Customer updateCustomerList(int id, Customer customer) {
+  public Customer updateCustomerList(Integer id, Customer customer) {
     /*customerList
       .stream()
       .forEach(c-> {
