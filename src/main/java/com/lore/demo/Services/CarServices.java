@@ -22,7 +22,6 @@ public class CarServices {
 
   public List<Cars> getCars() {
     return (List<Cars>) carsDao.findAll();
-    //return customerList;
   }
 
   public Cars getCarById(Integer carId) {
@@ -31,12 +30,6 @@ public class CarServices {
 
   public Cars createCar(Cars car) {
     return carsDao.save(car);
-
-    /*customer.setCustomerId(customerIdCount);
-    customerList.add(customer);
-    customerList.add(customer);
-    customerIdCount ++;
-    return customer;*/
   }
 
   public void deleteCarById(Integer carId) {

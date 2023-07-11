@@ -1,12 +1,9 @@
 package com.lore.demo.Api;
 
-import com.fasterxml.jackson.core.JsonEncoding;
-import com.fasterxml.jackson.databind.JsonSerializable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import springfox.documentation.spring.web.json.Json;
 
 import java.util.ArrayList;
 import java.util.HashMap;
