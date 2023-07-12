@@ -1,7 +1,7 @@
 package com.lore.demo.Api;
 
-import com.lore.demo.Models.Customer;
-import com.lore.demo.Services.CustomerServices;
+import com.lore.demo.models.domain.Customer;
+import com.lore.demo.services.CustomerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

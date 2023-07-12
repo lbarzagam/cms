@@ -1,6 +1,6 @@
-package com.lore.demo.Dao;
+package com.lore.demo.models.persitence.repository;
 
-import com.lore.demo.Models.Customer;
+import com.lore.demo.models.domain.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

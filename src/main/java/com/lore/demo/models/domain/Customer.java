@@ -1,4 +1,4 @@
-package com.lore.demo.Models;
+package com.lore.demo.models.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

@@ -1,8 +1,9 @@
 
 package com.lore.demo.Api;
 
-import com.lore.demo.Models.Cars;
-import com.lore.demo.Services.CarServices;
+import com.lore.demo.models.domain.Cars;
+import com.lore.demo.models.persitence.entities.CarsJpa;
+import com.lore.demo.services.CarServices;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.http.HttpStatus;
@@ -10,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
@@ -19,27 +21,27 @@ public class CarsController {
   private final CarServices carServices;
 
   @GetMapping(value = "")
-  public List<Cars> getCarList() {
+  public List<CarsJpa> getCarList() {
     return carServices.getCars();
   }
 
   @GetMapping(value = "/{carId}")
-  public ResponseEntity<Cars> getCarList(@PathVariable Integer carId) {
+  public ResponseEntity<CarsJpa> getCarList(@PathVariable UUID carId) {
     return new ResponseEntity<>(carServices.getCarById(carId), HttpStatus.OK);
   }
-  @PostMapping
-  public ResponseEntity<Cars> createCar(@RequestBody Cars car) {
+  @PostMapping("/createCars")
+  public ResponseEntity<CarsJpa> createCar(@RequestBody CarsJpa car) {
     return new ResponseEntity<>(carServices.createCar(car), HttpStatus.OK);
   }
 
   @PutMapping(value = "/{carId}")
-  public ResponseEntity<Cars> updateCar(@PathVariable Integer carId, @RequestBody Cars car) {
+  public ResponseEntity<CarsJpa> updateCar(@PathVariable UUID carId, @RequestBody CarsJpa car) {
     return new ResponseEntity<>(carServices.updateCar(carId, car), HttpStatus.OK);
   }
 
   @SneakyThrows
   @DeleteMapping(value = "/{carId}")
-  public ResponseEntity<?> deleteCar(@RequestParam Integer carId) {
+  public ResponseEntity<?> deleteCar(@RequestParam UUID carId) {
     try {
       carServices.deleteCarById(carId);
       return new ResponseEntity<>("OK", HttpStatus.OK);

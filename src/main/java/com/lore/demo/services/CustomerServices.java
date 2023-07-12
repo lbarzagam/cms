@@ -1,13 +1,11 @@
-package com.lore.demo.Services;
+package com.lore.demo.services;
 
-import com.lore.demo.Models.Customer;
-import com.lore.demo.Dao.CustomerDao;
-import com.lore.demo.Exception.CustomerNotFoundException;
+import com.lore.demo.models.domain.Customer;
+import com.lore.demo.models.persitence.repository.CustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Component
