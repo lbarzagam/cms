@@ -1,4 +1,4 @@
-package com.lore.demo.models.persitence.repository;
+package com.lore.demo.models.persistence.repository;
 
 import com.lore.demo.models.domain.Customer;
 import org.springframework.data.repository.CrudRepository;

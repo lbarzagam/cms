@@ -1,4 +1,4 @@
-package com.lore.demo.Api;
+package com.lore.demo.api;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

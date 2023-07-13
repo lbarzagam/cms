@@ -1,4 +1,4 @@
-package com.lore.demo.models.persitence.mappers.helpers;
+package com.lore.demo.models.persistence.mappers.helpers;
 
 import org.mapstruct.BeforeMapping;
 import org.mapstruct.MappingTarget;

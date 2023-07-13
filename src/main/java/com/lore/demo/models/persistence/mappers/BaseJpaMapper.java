@@ -1,7 +1,7 @@
-package com.lore.demo.models.persitence.mappers;
+package com.lore.demo.models.persistence.mappers;
 
-import com.lore.demo.models.persitence.mappers.helpers.CycleAvoidingMappingContext;
-import com.lore.demo.models.persitence.mappers.helpers.DoIgnore;
+import com.lore.demo.models.persistence.mappers.helpers.CycleAvoidingMappingContext;
+import com.lore.demo.models.persistence.mappers.helpers.DoIgnore;
 import org.mapstruct.Context;
 import org.mapstruct.InheritInverseConfiguration;
 import org.springframework.data.domain.Page;

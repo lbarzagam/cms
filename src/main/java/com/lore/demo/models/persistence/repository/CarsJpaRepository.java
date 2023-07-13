@@ -1,6 +1,6 @@
-package com.lore.demo.models.persitence.repository;
+package com.lore.demo.models.persistence.repository;
 
-import com.lore.demo.models.persitence.entities.CarsJpa;
+import com.lore.demo.models.persistence.entities.CarsJpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

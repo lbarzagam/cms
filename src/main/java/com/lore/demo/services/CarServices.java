@@ -1,11 +1,10 @@
 package com.lore.demo.services;
 
-import com.lore.demo.models.domain.Cars;
 import com.lore.demo.models.domain.Customer;
-import com.lore.demo.models.persitence.entities.CarsJpa;
-import com.lore.demo.models.persitence.mappers.CarsMapper;
-import com.lore.demo.models.persitence.repository.CarsDao;
-import com.lore.demo.models.persitence.repository.CarsJpaRepository;
+import com.lore.demo.models.persistence.entities.CarsJpa;
+import com.lore.demo.models.persistence.mappers.CarMapper;
+import com.lore.demo.models.persistence.repository.CarsDao;
+import com.lore.demo.models.persistence.repository.CarsJpaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -21,7 +20,7 @@ public class CarServices {
 
   private final CarsDao carsDao;
   private final CarsJpaRepository carsJpaRepository;
-  //private final CarsMapper carsMapper;
+  //private final CarMapper carMapper;
 
   private int customerIdCount = 1;
   private List<Customer> customerList = new CopyOnWriteArrayList<>();

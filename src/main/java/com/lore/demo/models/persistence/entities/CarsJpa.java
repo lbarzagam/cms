@@ -1,4 +1,4 @@
-package com.lore.demo.models.persitence.entities;
+package com.lore.demo.models.persistence.entities;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;

@@ -1,4 +1,4 @@
-package com.lore.demo.Api;
+package com.lore.demo.api;
 
 import com.lore.demo.models.domain.Customer;
 import com.lore.demo.services.CustomerServices;

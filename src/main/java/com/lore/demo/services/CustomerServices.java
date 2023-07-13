@@ -1,7 +1,7 @@
 package com.lore.demo.services;
 
 import com.lore.demo.models.domain.Customer;
-import com.lore.demo.models.persitence.repository.CustomerDao;
+import com.lore.demo.models.persistence.repository.CustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

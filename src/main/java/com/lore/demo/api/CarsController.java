@@ -1,8 +1,7 @@
 
-package com.lore.demo.Api;
+package com.lore.demo.api;
 
-import com.lore.demo.models.domain.Cars;
-import com.lore.demo.models.persitence.entities.CarsJpa;
+import com.lore.demo.models.persistence.entities.CarsJpa;
 import com.lore.demo.services.CarServices;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -31,7 +30,7 @@ public class CarsController {
   }
   @PostMapping("/createCars")
   public ResponseEntity<CarsJpa> createCar(@RequestBody CarsJpa car) {
-    return new ResponseEntity<>(carServices.createCar(car), HttpStatus.OK);
+    return new ResponseEntity<>( carServices.createCar(car), HttpStatus.OK);
   }
 
   @PutMapping(value = "/{carId}")
